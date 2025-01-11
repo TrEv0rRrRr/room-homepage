@@ -1,10 +1,3 @@
-## HEADER MENU
-
-Home
-Shop
-About
-Contact
-
 ## ARTICLE SECTION SLIDER 1
 
 Discover innovative ways to decorate
