@@ -37,8 +37,8 @@ const ArticleContent = [
 ];
 ---
 
-<main class="flex flex-col w-full gap-10">
-  <Slider images={images} ArticleContent={ArticleContent}>
+<main class="flex flex-col w-full h-full">
+  <Slider client:visible images={images} ArticleContent={ArticleContent}>
     <Header />
   </Slider>
   <Article />
