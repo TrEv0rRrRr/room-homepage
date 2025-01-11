@@ -1,14 +1,19 @@
 ---
-
+import Logo from "@assets/logo.astro";
+import IconClose from "@assets/MenuIcons/icon-close.astro";
+import IconHamburger from "@assets/MenuIcons/icon-hamburger.astro";
 ---
 
 <header>
-  <nav>
+  <IconHamburger />
+  <nav class="flex justify-between items-center">
+    <IconClose />
     <ul class="flex gap-5">
-      <li>Home</li>
-      <li>Shop</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li>home</li>
+      <li>shop</li>
+      <li>about</li>
+      <li>contact</li>
     </ul>
   </nav>
+  <Logo />
 </header>
