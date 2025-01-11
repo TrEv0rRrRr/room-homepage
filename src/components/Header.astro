@@ -4,16 +4,19 @@ import IconClose from "@assets/MenuIcons/icon-close.astro";
 import IconHamburger from "@assets/MenuIcons/icon-hamburger.astro";
 ---
 
-<header>
-  <IconHamburger />
-  <nav class="flex justify-between items-center">
+<header class="w-full absolute">
+  <div class="flex items-center px-6 pt-8 gap-28">
+    <IconHamburger />
+    <Logo />
+  </div>
+
+  <nav class="hidden justify-between items-center font-bold px-6 py-4">
     <IconClose />
-    <ul class="flex gap-5">
+    <ul class="flex gap-5 items-center">
       <li>home</li>
       <li>shop</li>
       <li>about</li>
       <li>contact</li>
     </ul>
   </nav>
-  <Logo />
 </header>

@@ -27,12 +27,3 @@ to ensure that every product is made as perfect and as consistent as possible. W
 experience in this industry, we understand what customers want for their home and office.
 
 Shop now
-
-## FOOTER
-
-About our furniture
-
-Our multifunctional collection blends design and function to suit your individual taste.
-Make each room unique, or pick a cohesive theme that best express your interests and what
-inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-or anything in between. Product specialists are available to help you create your dream space.
