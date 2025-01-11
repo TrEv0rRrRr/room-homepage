@@ -26,6 +26,8 @@
       "@variables/*": [
         "src/variables/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
