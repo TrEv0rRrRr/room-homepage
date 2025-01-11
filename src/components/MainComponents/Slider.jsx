@@ -5,14 +5,12 @@ const Slider = ({ children, images, ArticleContent }) => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    console.log(currentIndex);
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-    console.log(currentIndex);
   };
 
   return (
