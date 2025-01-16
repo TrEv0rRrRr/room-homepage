@@ -1,7 +1,7 @@
 ---
 import Article from "@components/MainComponents/Article.astro";
 import Slider from "./MainComponents/Slider";
-import Header from "@components/Header.astro";
+import Header from "@components/Header.jsx";
 
 const images = [
   {
@@ -37,9 +37,19 @@ const ArticleContent = [
 ];
 ---
 
-<main class="flex flex-col w-full h-full">
+<main class="flex flex-col">
   <Slider client:visible images={images} ArticleContent={ArticleContent}>
-    <Header />
+    <Header client:visible />
   </Slider>
   <Article />
 </main>
+
+<style>
+  @media (min-width: 1280px) {
+    main {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 0;
+    }
+  }
+</style>
