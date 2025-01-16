@@ -13,12 +13,38 @@ const Header = ({}) => {
   return (
     <React.StrictMode>
       <header className="w-full absolute md:z-20">
-        <div className="flex items-center px-6 pt-8 gap-28">
+
+        <div className="sm:flex items-center md:hidden px-6 pt-8 gap-28 ">
           <button className="block md:hidden" onClick={handleOpen}>
             <IconHamburger />
           </button>
           <Logo />
         </div>
+
+        <div className="hidden md:flex items-center absolute md:top-10 md:left-16 xl:top-16 xl:left-24 gap-10">
+            <Logo />
+            <nav
+              className="text-white"
+            >
+              <div className="flex items-center justify-between h-full px-7">
+                <ul className="flex gap-10 items-center font-bold text-lg">
+                  <li className="hover:text-gray-100 relative after:w-0 after:h-[0.1rem] after:bg-gray-100 after:absolute after:top-6 after:left-0 hover:after:w-full after:transition-all after:duration-500">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer">home</a>
+                  </li>
+                  <li className="hover:text-gray-100 relative after:w-0 after:h-[0.1rem] after:bg-gray-100 after:absolute after:top-6 after:left-0 hover:after:w-full after:transition-all after:duration-500">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer">shop</a>
+                  </li>
+                  <li className="hover:text-gray-100 relative after:w-0 after:h-[0.1rem] after:bg-gray-100 after:absolute after:top-6 after:left-0 hover:after:w-full after:transition-all after:duration-500">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer">about</a>
+                  </li>
+                  <li className="hover:text-gray-100 relative after:w-0 after:h-[0.1rem] after:bg-gray-100 after:absolute after:top-6 after:left-0 hover:after:w-full after:transition-all after:duration-500">
+                    <a href="http://#" target="_blank" rel="noopener noreferrer">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
         <nav
           className={`absolute top-0 left-0 w-full h-full 
             bg-white transition-transform duration-300 
@@ -41,6 +67,7 @@ const Header = ({}) => {
             </ul>
           </div>
         </nav>
+
       </header>
       
       {/* MODAL */}
